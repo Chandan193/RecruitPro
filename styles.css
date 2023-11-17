@@ -1,0 +1,610 @@
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(45deg, #fd746c, #ff9068);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #f0f0f0;
+}
+
+.hero {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333333;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.6s;
+}
+
+.btn:hover {
+  background-color: #222222;
+}
+
+.features {
+  background: linear-gradient(45deg, rgb(240, 242, 240), rgb(160, 180, 159));
+  padding: 60px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333333;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #666666;
+}
+
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px 0;
+  color: #999999;
+  font-size: 14px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  padding: 12px 30px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #222222;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#location,
+#job-role {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  margin-right: 10px;
+}
+
+#search-btn {
+  padding: 12px 30px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #222222;
+}
+
+.candidate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.candidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.candidate:hover {
+  transform: translateY(-5px);
+}
+
+.candidate img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.candidate h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.candidate p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.candidate button {
+  padding: 10px 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.candidate button:hover {
+  background-color: #222222;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="name"] {
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .login-page p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .login-page a {
+    font-size: 12px;
+  }
+
+  .candidate-search h2 {
+    font-size: 24px;
+  }
+
+  #location,
+  #job-role {
+    margin-right: 5px;
+  }
+
+  #search-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .candidate img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .candidate h3 {
+    font-size: 16px;
+  }
+
+  .candidate p {
+    font-size: 12px;
+  }
+
+  .candidate button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+.footer {
+  position: relative;
+  width: auto;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 720px 100px;
+}
+
+.wave#wave1 {
+  z-index: 720;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 719;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 720;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 719;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 720px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -720px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+.social-icon__link {
+  width: 25px;
+}
+
+.about {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.about h2 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h4 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 40px 10px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-member h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+}
+
+/* Additional styles for contact.html */
+
+.contact {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  margin-bottom: 100px; /* Add margin to create space for the footer */
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #666666;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 12px 30px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #222222;
+}
+
+/* Adjustments to fix the overlapping issue */
+.footer {
+  margin-top: 50px; /* Add margin to the top of the footer */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 40px 10px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  form {
+    max-width: none;
+  }
+}
+
+
